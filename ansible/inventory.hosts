@@ -1,0 +1,9 @@
+[web_servers]
+34.238.242.51
+44.202.52.207
+34.238.239.242
+44.203.95.182
+
+[web_servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/Downloads/Mackey.pem
