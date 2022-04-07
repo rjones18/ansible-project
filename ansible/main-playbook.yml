@@ -44,8 +44,11 @@
       notify:
         - Restart nginx
 
+    - name: Restart Nginx on all servers
+      ansible.builtin.shell: sudo service nginx restart
+
   handlers:
-    - name: Restart ngninx service
+    - name: Restart nginx
       service:
         name: "nginx"
         state: restarted
